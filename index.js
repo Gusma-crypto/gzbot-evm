@@ -1,9 +1,11 @@
 const chalk = require('chalk');
 const { showMainMenu } = require('./menu-cli');
+const fs = require('fs');
+const path = require('path');
 
 async function main() {
     console.log(chalk.green('bot berjalan.....'));
-    await showMainMenu();
+    await showMainMenu();    
 }
 
 main().catch(error =>{
